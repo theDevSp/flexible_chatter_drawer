@@ -1,0 +1,582 @@
+# Translation template for Flexible Chatter Drawer
+# Copyright (C) 2024
+# This file is distributed under the same license as the Flexible Chatter Drawer package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Flexible Chatter Drawer 18.0.1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-23 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. module: flexible_chatter_drawer
+#: model:ir.model,name:flexible_chatter_drawer.model_chatter_drawer_config
+msgid "Chatter Drawer Configuration"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Flexible Chatter Drawer Settings"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "<strong>ℹ️ Important:</strong> After making changes, click the <strong>\"Save &amp; Apply Changes\"</strong> button above to see your customizations take effect. The page will automatically reload to apply the new configuration."
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "💾 Save &amp; Apply Changes"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Save changes and reload the page to see them in action"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "🔄 Reset to Default"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Are you sure you want to reset all settings to default values? This action cannot be undone."
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Reset all configuration to default values"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: code:addons/flexible_chatter_drawer/models/chatter_config.py:0
+msgid "Reset Successful"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: code:addons/flexible_chatter_drawer/models/chatter_config.py:0
+msgid "Configuration has been reset to default values. Page will reload..."
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "🎨 Colors &amp; Design"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Button Colors"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_color_primary
+msgid "Button Primary Color"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_color_primary
+msgid "Primary gradient color for the floating button"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_color_secondary
+msgid "Button Secondary Color"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_color_secondary
+msgid "Secondary gradient color for the floating button"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_icon_color
+msgid "Button Icon Color"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_icon_color
+msgid "Color of the icon inside the button"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_icon
+msgid "Button Icon"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_icon
+msgid "Icon to display on the button"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Drawer Colors"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__drawer_background_color
+msgid "Drawer Background"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__drawer_background_color
+msgid "Background color of the drawer"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__overlay_color
+msgid "Overlay Color"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__overlay_color
+msgid "Color of the overlay background (supports rgba)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__close_button_color
+msgid "Close Button Color"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__close_button_color
+msgid "Color of the close button"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__close_button_hover_color
+msgid "Close Button Hover"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__close_button_hover_color
+msgid "Color of the close button on hover"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Preview"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "<strong>💡 Tip:</strong> Use the color picker to choose colors. Gradient buttons use both primary and secondary colors."
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "📐 Sizing"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Button Size"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_size
+msgid "Button Size (px)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_size
+msgid "Width and height of the floating button in pixels"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_border_radius
+msgid "Button Border Radius (%)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_border_radius
+msgid "Border radius of the button (50 = circle, lower = rounded square)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_shadow_size
+msgid "Button Shadow"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_shadow_size
+msgid "Shadow intensity for the button"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Drawer Size"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__drawer_width
+msgid "Drawer Width (%)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__drawer_width
+msgid "Width of the drawer as percentage of screen width"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__drawer_width_mobile
+msgid "Drawer Width Mobile (%)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__drawer_width_mobile
+msgid "Width of the drawer on mobile devices"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Guidelines"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "📍 Positioning"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Button Position"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_position
+msgid "Button Position"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_position
+msgid "Position of the floating button"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_position
+msgid "Bottom Right"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_position
+msgid "Bottom Left"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_position
+msgid "Top Right"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_position
+msgid "Top Left"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_horizontal_offset
+msgid "Button Horizontal Offset (px)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_horizontal_offset
+msgid "Distance from the horizontal edge"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__button_vertical_offset
+msgid "Button Vertical Offset (px)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__button_vertical_offset
+msgid "Distance from the vertical edge"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Drawer Position"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__drawer_side
+msgid "Drawer Side"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__drawer_side
+msgid "Which side the drawer slides from"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__drawer_side
+msgid "Right Side"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__drawer_side
+msgid "Left Side"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Z-Index (Advanced)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__z_index_button
+msgid "Button Z-Index"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__z_index_button
+msgid "Z-index for the floating button"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__z_index_overlay
+msgid "Overlay Z-Index"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__z_index_overlay
+msgid "Z-index for the overlay"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__z_index_drawer
+msgid "Drawer Z-Index"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__z_index_drawer
+msgid "Z-index for the drawer"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "✨ Effects"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Animations"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__enable_animations
+msgid "Enable Animations"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__enable_animations
+msgid "Enable slide and fade animations"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__animation_duration
+msgid "Animation Duration (s)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__animation_duration
+msgid "Duration of animations in seconds"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__enable_pulse_effect
+msgid "Enable Pulse Effect"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__enable_pulse_effect
+msgid "Enable pulsing animation on the button"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Visual Effects"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__enable_overlay
+msgid "Show Overlay"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__enable_overlay
+msgid "Show overlay when drawer is open"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Note"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "<strong>⚠️ Accessibility:</strong> Users with motion sensitivity preferences will automatically have animations disabled regardless of these settings."
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "⚙️ Advanced"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Model Exclusions"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__exclude_models
+msgid "Exclude Models"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__exclude_models
+msgid "Comma-separated list of models to exclude (e.g., res.users, res.partner)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Comma-separated list of models where drawer should not appear"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Dark Mode"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__enable_dark_mode
+msgid "Enable Dark Mode Support"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__enable_dark_mode
+msgid "Automatically adjust colors for dark mode"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__dark_mode_drawer_bg
+msgid "Dark Mode Drawer Background"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__dark_mode_drawer_bg
+msgid "Drawer background color in dark mode"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__dark_mode_close_btn_bg
+msgid "Dark Mode Close Button Background"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__dark_mode_close_btn_bg
+msgid "Close button background in dark mode"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "Custom CSS"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,field_description:flexible_chatter_drawer.field_chatter_drawer_config__custom_css
+msgid "Custom CSS"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,help:flexible_chatter_drawer.field_chatter_drawer_config__custom_css
+msgid "Add custom CSS rules (advanced users only)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.view,arch_db:flexible_chatter_drawer.view_chatter_drawer_config_form
+msgid "<strong>⚠️ Warning:</strong> Custom CSS is for advanced users only. Invalid CSS may break the drawer appearance."
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: code:addons/flexible_chatter_drawer/models/chatter_config.py:0
+msgid "Only one configuration record is allowed. Please edit the existing one."
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: code:addons/flexible_chatter_drawer/models/chatter_config.py:0
+msgid "Configuration cannot be deleted. You can only modify it."
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_shadow_size
+msgid "None"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_shadow_size
+msgid "Small"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_shadow_size
+msgid "Medium"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_shadow_size
+msgid "Large"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_icon
+msgid "Comments (default)"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_icon
+msgid "Single Comment"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_icon
+msgid "Envelope"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_icon
+msgid "Bell"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_icon
+msgid "Inbox"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_icon
+msgid "Message"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.model.fields,selection:flexible_chatter_drawer.field_chatter_drawer_config__button_icon
+msgid "Chat"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.actions.act_window,name:flexible_chatter_drawer.action_chatter_drawer_config
+#: model:ir.ui.menu,name:flexible_chatter_drawer.menu_chatter_drawer_config
+msgid "Configuration"
+msgstr ""
+
+#. module: flexible_chatter_drawer
+#: model:ir.ui.menu,name:flexible_chatter_drawer.menu_chatter_drawer_root
+msgid "Chatter Drawer"
+msgstr ""
+

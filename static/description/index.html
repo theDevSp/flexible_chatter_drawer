@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Chatter Drawer - Transform Your Odoo Chatter</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .tagline {
+            text-align: center;
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-card h4 {
+            color: #667eea;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .feature-card ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .feature-card li {
+            margin: 8px 0;
+        }
+        
+        .screenshot {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin: 50px 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #667eea22 0%, #764ba222 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .emoji {
+            font-size: 1.3em;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Image -->
+    <div style="text-align: center; margin-bottom: 20px;">
+        <img src="banner.png" alt="Flexible Chatter Drawer Banner" style="width: 100%; max-width: 880px; height: auto; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.2);">
+    </div>
+    
+    <div class="container">
+        <h1>🎯 Flexible Chatter Drawer</h1>
+        <p class="tagline">Transform your Odoo chatter into a beautiful, customizable floating drawer!</p>
+        
+        <div class="highlight">
+            <p style="font-size: 1.2em; text-align: center; margin: 0;">
+                <strong>Perfect for Odoo 18.0</strong> • Clean Interface • Fully Customizable • Zero Code Required
+            </p>
+        </div>
+
+        <h2>✨ Why Flexible Chatter Drawer?</h2>
+        <p>
+            The Flexible Chatter Drawer revolutionizes how you interact with Odoo's chatter system. 
+            Instead of cluttering your form views, the chatter elegantly slides in from the side when needed,
+            giving you maximum screen real estate while keeping all communication features just a click away.
+        </p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4><span class="emoji">🎨</span>Full Customization</h4>
+                <ul>
+                    <li>Custom colors and gradients</li>
+                    <li>Adjustable sizes and positions</li>
+                    <li>Multiple button icons</li>
+                    <li>Custom CSS support</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4><span class="emoji">📱</span>Responsive Design</h4>
+                <ul>
+                    <li>Mobile-optimized</li>
+                    <li>Tablet-friendly</li>
+                    <li>Adaptive layouts</li>
+                    <li>Touch-enabled</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <h4><span class="emoji">♿</span>Accessibility</h4>
+                <ul>
+                    <li>High contrast support</li>
+                    <li>Reduced motion mode</li>
+                    <li>Keyboard navigation</li>
+                    <li>Screen reader friendly</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>🚀 Key Features</h2>
+        
+        <h3><span class="emoji">🎨</span>Colors & Design</h3>
+        <ul>
+            <li><strong>Button Gradients:</strong> Choose your primary and secondary colors for beautiful gradient effects</li>
+            <li><strong>Drawer Background:</strong> Customize the drawer background to match your theme</li>
+            <li><strong>Icon Selection:</strong> Choose from 7 different icons for the floating button</li>
+            <li><strong>Dark Mode:</strong> Automatic dark mode support with customizable colors</li>
+        </ul>
+
+        <h3><span class="emoji">📐</span>Sizing & Dimensions</h3>
+        <ul>
+            <li><strong>Button Size:</strong> Set the perfect size for your floating button (50-80px recommended)</li>
+            <li><strong>Border Radius:</strong> Make it circular (50%) or squared (0-50%)</li>
+            <li><strong>Drawer Width:</strong> Control how much screen space the drawer takes (30-70% desktop, 100% mobile)</li>
+            <li><strong>Shadow Effects:</strong> Choose from none, small, medium, or large shadow effects</li>
+        </ul>
+
+        <h3><span class="emoji">📍</span>Positioning</h3>
+        <ul>
+            <li><strong>Button Position:</strong> Bottom-right, Bottom-left, Top-right, or Top-left</li>
+            <li><strong>Drawer Side:</strong> Slide in from left or right</li>
+            <li><strong>Custom Offsets:</strong> Fine-tune the exact position from edges</li>
+            <li><strong>Z-Index Control:</strong> Manage layering for complex layouts</li>
+        </ul>
+
+        <h3><span class="emoji">✨</span>Effects & Animations</h3>
+        <ul>
+            <li><strong>Slide Animations:</strong> Smooth slide-in/out transitions</li>
+            <li><strong>Pulse Effect:</strong> Attention-grabbing pulse on the button</li>
+            <li><strong>Overlay Effect:</strong> Optional dimmed overlay when drawer is open</li>
+            <li><strong>Animation Speed:</strong> Control how fast animations play</li>
+        </ul>
+
+        <h2>📸 Screenshots</h2>
+        <p style="text-align: center; margin-bottom: 30px;">
+            See the Flexible Chatter Drawer in action:
+        </p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <img src="screen1.png" alt="Default Configuration - Floating Button" class="screenshot">
+            <p style="text-align: center; color: #666; margin-top: 10px;"><strong>Default Configuration</strong> - Elegant floating button on form view</p>
+        </div>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <img src="screen2.png" alt="Custom Colors - Drawer Open" class="screenshot">
+            <p style="text-align: center; color: #666; margin-top: 10px;"><strong>Custom Colors</strong> - Fully customizable drawer with your brand colors</p>
+        </div>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <img src="screen3.png" alt="Mobile View - Responsive Design" class="screenshot">
+            <p style="text-align: center; color: #666; margin-top: 10px;"><strong>Mobile View</strong> - Perfect responsive design for all devices</p>
+        </div>
+
+        <h2>⚙️ Easy Configuration</h2>
+        <p>
+            No coding required! Simply go to <strong>Settings → Technical → Chatter Drawer → Configuration</strong>
+            and customize every aspect through our intuitive interface:
+        </p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>Colors Tab</h4>
+                <p>Visual color picker for all color options</p>
+            </div>
+            <div class="feature-card">
+                <h4>Sizing Tab</h4>
+                <p>Sliders and inputs for precise sizing</p>
+            </div>
+            <div class="feature-card">
+                <h4>Position Tab</h4>
+                <p>Dropdown selectors for easy positioning</p>
+            </div>
+            <div class="feature-card">
+                <h4>Effects Tab</h4>
+                <p>Toggle animations and effects on/off</p>
+            </div>
+            <div class="feature-card">
+                <h4>Advanced Tab</h4>
+                <p>Model exclusions and custom CSS</p>
+            </div>
+        </div>
+
+        <h2>🎯 Perfect For</h2>
+        <div class="highlight">
+            <ul style="columns: 2; column-gap: 40px;">
+                <li>Companies wanting a modern interface</li>
+                <li>Users with limited screen space</li>
+                <li>Mobile and tablet users</li>
+                <li>Clean, minimalist designs</li>
+                <li>Better space utilization</li>
+                <li>Improved user experience</li>
+                <li>Professional appearance</li>
+                <li>Multi-device environments</li>
+            </ul>
+        </div>
+
+        <h2>📦 Installation</h2>
+        <ol>
+            <li>Download the module from Odoo Apps Store</li>
+            <li>Install it in your Odoo instance (Apps → Install)</li>
+            <li>Go to Settings → Technical → Chatter Drawer → Configuration</li>
+            <li>Customize to your liking</li>
+            <li>Save and enjoy!</li>
+        </ol>
+
+        <h2>🔧 Technical Details</h2>
+        <div class="badge">Odoo 18.0</div>
+        <div class="badge">OWL Framework</div>
+        <div class="badge">Zero Dependencies</div>
+        <div class="badge">LGPL-3 License</div>
+        <div class="badge">Mobile Ready</div>
+        <div class="badge">Accessible</div>
+        
+        <h3>Requirements</h3>
+        <ul>
+            <li>Odoo 18.0 Community or Enterprise</li>
+            <li>base, mail, and web modules (standard Odoo)</li>
+            <li>No external dependencies</li>
+        </ul>
+
+        <h2>🤝 Support</h2>
+        <p>
+            We provide comprehensive support for this module:
+        </p>
+        <ul>
+            <li>📧 Email support</li>
+            <li>📚 Detailed documentation</li>
+            <li>🎥 Video tutorials (coming soon)</li>
+            <li>🐛 Bug fixes and updates</li>
+            <li>✨ Feature requests welcome</li>
+        </ul>
+
+        <div class="cta-section">
+            <h2 style="color: white; border: none; margin-top: 0;">Ready to Transform Your Odoo?</h2>
+            <p style="font-size: 1.2em;">Join hundreds of satisfied users who have upgraded their Odoo experience!</p>
+            <a href="#" class="btn" style="background: white; color: #667eea;">Install Now</a>
+            <a href="#" class="btn" style="background: rgba(255,255,255,0.2);">View Demo</a>
+        </div>
+
+        <h2>📜 License</h2>
+        <p>
+            This module is licensed under <strong>LGPL-3</strong>, ensuring it remains free and open source.
+            You can use it in both commercial and non-commercial projects.
+        </p>
+
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 2px solid #eee;">
+            <p style="color: #666;">
+                Built with ❤️ for the Odoo community<br>
+                <strong>Flexible Chatter Drawer</strong> • Version 18.0.1.0.0
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
