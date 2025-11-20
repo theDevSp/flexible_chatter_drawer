@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_chatter_drawer_config_form" model="ir.ui.view">
+        <field name="name">chatter.drawer.config.form</field>
+        <field name="model">chatter.drawer.config</field>
+        <field name="arch" type="xml">
+            <form string="Chatter Drawer Configuration" create="false" delete="false">
+                <header>
+                    <button name="action_reload_page" type="object" string="💾 Save &amp; Apply Changes" class="btn-primary" help="Save changes and reload the page to see them in action"/>
+                    <button name="action_reset_to_default" type="object" string="🔄 Reset to Default" class="btn-secondary" confirm="Are you sure you want to reset all settings to default values? This action cannot be undone." help="Reset all configuration to default values"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="id" invisible="1"/>
+                            Flexible Chatter Drawer Settings
+                        </h1>
+                        <div class="alert alert-info mb-3">
+                            <strong>ℹ️ Important:</strong> After making changes, click the 
+                            <strong>"Save &amp; Apply Changes"</strong> button above to see your customizations take effect.
+                            The page will automatically reload to apply the new configuration.
+                            <br/>
+                            Use <strong>"Reset to Default"</strong> to restore all settings to their original values.
+                        </div>
+                    </div>
+                    
+                    <notebook>
+                        <!-- Colors & Design Tab -->
+                        <page string="🎨 Colors &amp; Design" name="colors">
+                            <group>
+                                <group string="Button Colors">
+                                    <field name="button_color_primary" widget="color"/>
+                                    <field name="button_color_secondary" widget="color"/>
+                                    <field name="button_icon_color" widget="color"/>
+                                    <field name="button_icon"/>
+                                </group>
+                                <group string="Drawer Colors">
+                                    <field name="drawer_background_color" widget="color"/>
+                                    <field name="overlay_color"/>
+                                    <field name="close_button_color" widget="color"/>
+                                    <field name="close_button_hover_color" widget="color"/>
+                                </group>
+                            </group>
+                            
+                            <!-- Color Palette Selector -->
+                            <group>
+                                <group string="🎨 Choose a Color Palette" colspan="2">
+                                    <field name="color_palette" widget="radio" options="{'horizontal': true}"/>
+                                    <div class="alert alert-info">
+                                        <strong>💡 Quick Selection:</strong> Choose a predefined palette below to automatically apply harmonious colors to all three chatter buttons, or select "Custom Colors" to manually set each button's colors.
+                                    </div>
+                                </group>
+                            </group>
+                            
+                            <!-- Individual Button Colors -->
+                            <group string="Chatter Button Colors" invisible="color_palette != 'custom'">
+                                <group string="Send Message Button">
+                                    <field name="send_message_bg_color" widget="color" placeholder="Leave empty for default"/>
+                                    <field name="send_message_text_color" widget="color" placeholder="Leave empty for default"/>
+                                </group>
+                                <group string="Log Note Button">
+                                    <field name="log_note_bg_color" widget="color" placeholder="Leave empty for default"/>
+                                    <field name="log_note_text_color" widget="color" placeholder="Leave empty for default"/>
+                                </group>
+                                <group string="Activities Button">
+                                    <field name="activities_bg_color" widget="color" placeholder="Leave empty for default"/>
+                                    <field name="activities_text_color" widget="color" placeholder="Leave empty for default"/>
+                                </group>
+                            </group>
+                            <group>
+                                <group string="Preview">
+                                    <div class="alert alert-info">
+                                        <strong>💡 Tip:</strong> Use the color picker to choose colors.
+                                        Gradient buttons use both primary and secondary colors.
+                                    </div>
+                                </group>
+                                <group string="🎨 Palette Gallery - Inspired by PaletteDeCouleur.net" colspan="2">
+                                    <div class="alert alert-success" style="width: 100%;">
+                                        <strong style="font-size: 1.1em;">Available Color Palettes - Click a Palette Name Above to Apply</strong>
+                                        <div style="margin-top: 15px;">
+                                            
+                                            <!-- Row 1 -->
+                                            <div style="display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Purple Elegance</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #667eea; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #764ba2; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #4a919e; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Ocean Breeze</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #17a2b8; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #4aa3a2; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #5784ba; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Sunset Vibes</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #f27438; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #d46f4d; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #ffbf66; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Row 2 -->
+                                            <div style="display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Forest Calm</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #7aa95c; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #5d7052; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #226d68; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Coral Dream</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #ca3c66; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #db6a8f; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #e8aabe; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Vintage Rose</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #ce6a6b; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #ebaca2; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #bed3c3; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Row 3 -->
+                                            <div style="display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Midnight Sky</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #212e53; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #384454; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #5784ba; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Golden Hour</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #e1a624; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #daab3a; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #b67332; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Arctic Frost</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #9ac8eb; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #b6d8f2; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #a7e0e0; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Row 4 -->
+                                            <div style="display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Tropical Paradise</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #2cced2; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #76cdcd; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #08c5d1; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Autumn Leaves</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #c18845; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #f0be86; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #93441a; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Candy Pop</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #f9968b; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #f4cfdf; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #db6a8f; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Row 5 -->
+                                            <div style="display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Earth Tones</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #6a645a; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #e3cd8b; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #ad956b; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Neon Nights</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #a7001e; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #ca3c66; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #db6a8f; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Pastel Spring</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #f7f6cf; border-radius: 3px; border: 1px solid #ddd;"></div>
+                                                        <div style="flex: 1; background: #e2e9c0; border-radius: 3px; border: 1px solid #ddd;"></div>
+                                                        <div style="flex: 1; background: #9ac8eb; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Row 6 -->
+                                            <div style="display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Deep Ocean</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #18534f; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #226d68; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #4aa3a2; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Cherry Blossom</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #db6a8f; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #f4cfdf; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #ebaca2; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Desert Sand</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #d6955b; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #feeaa1; border-radius: 3px; border: 1px solid #ddd;"></div>
+                                                        <div style="flex: 1; background: #c18845; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Row 7 -->
+                                            <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+                                                <div style="flex: 1; min-width: 200px; border: 2px solid #ddd; border-radius: 6px; padding: 8px; background: white;">
+                                                    <div style="font-weight: bold; margin-bottom: 5px; color: #333;">Lavender Fields</div>
+                                                    <div style="display: flex; gap: 3px; height: 30px;">
+                                                        <div style="flex: 1; background: #764ba2; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #9ac8eb; border-radius: 3px;"></div>
+                                                        <div style="flex: 1; background: #f4cfdf; border-radius: 3px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div style="background: #f8f9fa; padding: 12px; border-radius: 4px; border-left: 4px solid #007bff;">
+                                                <strong>💡 How to Use:</strong>
+                                                <ul style="margin: 8px 0 0 0; padding-left: 20px;">
+                                                    <li>Select a palette from the radio buttons above</li>
+                                                    <li>Each color represents: <strong>1st = Send Message</strong>, <strong>2nd = Log Note</strong>, <strong>3rd = Activities</strong></li>
+                                                    <li>Choose "Custom Colors" to manually set each button individually</li>
+                                                    <li>Select "Odoo Default" to use standard Odoo button styles</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </group>
+                            </group>
+                        </page>
+                        
+                        <!-- Sizing Tab -->
+                        <page string="📐 Sizing" name="sizing">
+                            <group>
+                                <group string="Button Size">
+                                    <field name="button_size"/>
+                                    <field name="button_border_radius"/>
+                                    <field name="button_shadow_size"/>
+                                </group>
+                                <group string="Drawer Size">
+                                    <field name="drawer_width"/>
+                                    <field name="drawer_width_mobile"/>
+                                </group>
+                            </group>
+                            <group>
+                                <group string="Guidelines">
+                                    <div class="alert alert-info">
+                                        <ul>
+                                            <li><strong>Button Size:</strong> Recommended 50-80px</li>
+                                            <li><strong>Border Radius:</strong> 50% = circle, 0% = square</li>
+                                            <li><strong>Drawer Width:</strong> 30-70% for desktop</li>
+                                            <li><strong>Mobile Width:</strong> Usually 100% for mobile</li>
+                                        </ul>
+                                    </div>
+                                </group>
+                            </group>
+                        </page>
+                        
+                        <!-- Positioning Tab -->
+                        <page string="📍 Positioning" name="positioning">
+                            <group>
+                                <group string="Button Position">
+                                    <field name="button_position"/>
+                                    <field name="button_horizontal_offset"/>
+                                    <field name="button_vertical_offset"/>
+                                </group>
+                                <group string="Drawer Position">
+                                    <field name="drawer_side"/>
+                                </group>
+                            </group>
+                            <group>
+                                <group string="Z-Index (Advanced)">
+                                    <field name="z_index_button"/>
+                                    <field name="z_index_overlay"/>
+                                    <field name="z_index_drawer"/>
+                                </group>
+                            </group>
+                        </page>
+                        
+                        <!-- Effects & Animations Tab -->
+                        <page string="✨ Effects" name="effects">
+                            <group>
+                                <group string="Animations">
+                                    <field name="enable_animations"/>
+                                    <field name="animation_duration" invisible="enable_animations == False"/>
+                                    <field name="enable_pulse_effect"/>
+                                </group>
+                                <group string="Visual Effects">
+                                    <field name="enable_overlay"/>
+                                </group>
+                            </group>
+                            <group>
+                                <group string="Note">
+                                    <div class="alert alert-warning">
+                                        <strong>⚠️ Accessibility:</strong> Users with motion sensitivity preferences
+                                        will automatically have animations disabled regardless of these settings.
+                                    </div>
+                                </group>
+                            </group>
+                        </page>
+                        
+                        <!-- Advanced Tab -->
+                        <page string="⚙️ Advanced" name="advanced">
+                            <group>
+                                <group string="Model Exclusions">
+                                    <field name="exclude_models" placeholder="res.users, res.partner"/>
+                                    <div class="text-muted">
+                                        Comma-separated list of models where drawer should not appear
+                                    </div>
+                                </group>
+                                <group string="Dark Mode">
+                                    <field name="enable_dark_mode"/>
+                                    <field name="dark_mode_drawer_bg" widget="color" invisible="enable_dark_mode == False"/>
+                                    <field name="dark_mode_close_btn_bg" widget="color" invisible="enable_dark_mode == False"/>
+                                </group>
+                            </group>
+                            <group string="Custom CSS">
+                                <field name="custom_css" placeholder="/* Add custom CSS rules here */" nolabel="1"/>
+                                <div class="alert alert-danger">
+                                    <strong>⚠️ Warning:</strong> Custom CSS is for advanced users only.
+                                    Invalid CSS may break the drawer appearance.
+                                </div>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_chatter_drawer_config" model="ir.actions.act_window">
+        <field name="name">Chatter Drawer Configuration</field>
+        <field name="res_model">chatter.drawer.config</field>
+        <field name="view_mode">form</field>
+        <field name="target">current</field>
+        <field name="res_id" eval="1"/>
+        <field name="context">{'create': False, 'delete': False, 'form_view_ref': 'flexible_chatter_drawer.view_chatter_drawer_config_form'}</field>
+    </record>
+</odoo>
+
