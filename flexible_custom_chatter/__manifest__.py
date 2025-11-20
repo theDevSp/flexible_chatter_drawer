@@ -45,7 +45,7 @@ Go to Settings > Technical > Chatter Drawer Configuration to customize:
 - And much more!
 
     """,
-    'author': 'Your Company',
+    'author': 'New Art',
     'website': 'https://www.yourcompany.com',
     'license': 'LGPL-3',
     'depends': [
